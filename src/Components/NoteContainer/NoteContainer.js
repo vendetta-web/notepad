@@ -1,4 +1,5 @@
 import React from "react";
+
 import Note from "../Note/Note";
 
 import "./NoteContainer.css";
@@ -10,6 +11,7 @@ function NoteContainer(props) {
     for (let i = arr.length - 1; i >= 0; --i) {
       array.push(arr[i]);
     }
+
     return array;
   };
 
@@ -18,14 +20,18 @@ function NoteContainer(props) {
   return (
     <div className="note-container">
       <h2>Let's Note Something</h2>
-      <div className="note-container_notes custom-scrollbar">
+      <div className="note-container_notes custom-scroll">
         {notes?.length > 0 ? (
           notes.map((item) => (
-            <Note key={item.id} note={item} deleteNote={props.deleteNote} 
-            updatetext={props.updatetext} />
+            <Note
+              key={item.id}
+              note={item}
+              deleteNote={props.deleteNote}
+              updateText={props.updateText}
+            />
           ))
         ) : (
-          <h3>No Notes Present</h3>
+          <h3>No Notes present</h3>
         )}
       </div>
     </div>
