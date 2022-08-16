@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 # Live Preview
-https://6213657f6dfa7116754d8598--epic-golick-361277.netlify.app/
+https://epic-golick-361277.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
